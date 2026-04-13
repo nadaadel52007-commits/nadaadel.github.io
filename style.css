@@ -81,90 +81,52 @@ footer {
   text-align: center;
   padding: 12px;
 }
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes softPadding {
-  0% {
-    padding: 10px 20px;
-  }
-  50% {
-    padding: 16px 28px;
-  }
-  100% {
-    padding: 10px 20px;
-  }
-}
-
 @media (max-width: 768px) {
     body {
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-        padding: 0;
+        display: flex !important;
+        flex-direction: row !important;
+        width: 100vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
     .sidebar {
-        width: 70px !important;
+        width: 25% !important;
         height: 100vh !important;
-        position: sticky;
+        position: sticky !important;
         top: 0;
-        display: flex;
+        display: flex !important;
         flex-direction: column !important;
-        padding-top: 15px;
-        flex-shrink: 0;
+        padding-top: 20px !important;
+    }
+
+    .main-content {
+        width: 75% !important;
+        margin-left: 0 !important;
+        padding: 10px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .hero-box {
+        width: 95% !important;
+        padding: 30px 10px !important;
+        border-width: 2px !important;
+    }
+
+    h1 {
+        font-size: 22px !important;
+    }
+
+    p {
+        font-size: 14px !important;
+        line-height: 1.4 !important;
     }
 
     .sidebar a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 12px 2px;
-        font-size: 9px;
-        gap: 4px;
-    }
-
-    .sidebar a i, .sidebar a img {
-        font-size: 16px;
-        width: auto;
-    }
-
-    .main {
-        flex: 1;
-        padding: 20px 10px !important;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow-x: hidden;
-    }
-
-    .main h1 {
-        font-size: 16px !important;
-        width: 90% !important;
-        padding: 12px !important;
-        margin: 15px 0 !important;
-        line-height: 1.4;
-    }
-
-    .main p {
-        font-size: 12px !important;
-        width: 95% !important;
-        line-height: 1.5;
-    }
-
-    footer {
-        font-size: 10px;
-        padding: 10px 0;
-        width: 100%;
-        text-align: center;
+        font-size: 11px !important;
+        padding: 10px 5px !important;
     }
 }
